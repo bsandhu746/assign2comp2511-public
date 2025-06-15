@@ -1,3 +1,4 @@
+/* ======= IMPORT & BASE ======= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
@@ -5,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #eef6fb;
@@ -18,28 +20,35 @@ header, footer {
   color: #fff;
   padding: 15px 25px;
 }
+
 .logo {
   display: inline-block;
   vertical-align: middle;
 }
+
 .logo img {
   height: 40px;
 }
+
 .logo figcaption {
-  display: none; 
+  display: none;
 }
+
 nav {
   display: inline-block;
   vertical-align: middle;
   margin-left: 40px;
 }
+
 nav ul {
   list-style: none;
 }
+
 nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -47,6 +56,7 @@ nav ul li a {
   border-radius: 6px;
   font-weight: 500;
 }
+
 nav ul li a.current,
 nav ul li a:hover {
   background: #73bde6;
@@ -65,6 +75,7 @@ main {
   padding: 0 20px;
   min-height: calc(100vh - 160px);
 }
+
 article > section:not([class*="hero"]),
 article > figure,
 article > p:not(.hero) {
@@ -80,17 +91,21 @@ table {
   border-collapse: collapse;
   margin-top: 10px;
 }
+
 thead th {
   background: #73bde6;
   color: #fff;
   padding: 10px;
 }
+
 tbody tr:nth-child(even) {
   background: #e2f1fa;
 }
+
 tbody tr:nth-child(odd) {
   background: #ffffff;
 }
+
 td, th {
   border: 1px solid #ccc;
   padding: 10px;
@@ -107,19 +122,21 @@ td, th {
   font-weight: 600;
   transition: background 0.3s;
 }
+
 .btn:hover {
   background: #5aaedc;
 }
 
 .float-right {
   float: right;
-  width: 40%;              
-  max-width: 350px;        
+  width: 40%;
+  max-width: 350px;
   margin-left: 20px;
   margin-bottom: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .float-right img {
   width: 100%;
   height: auto;
@@ -127,9 +144,234 @@ td, th {
   border-radius: 8px;
 }
 
-
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* ======= HERO STYLES ======= */
+
+.hero,
+.hero-2,
+.hero-3 {
+  background: linear-gradient(135deg, #73bde6, #5aaedc);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-3 {
+  background: linear-gradient(135deg, #4a89c5, #2e6dad);
+}
+
+.hero h1,
+.hero-2 h1,
+.hero-3 h1,
+.hero-3 h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p,
+.hero-2 p,
+.hero-3 p {
+  font-size: 1.2em;
+}
+
+#mission::first-letter {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2b6fa0;
+  float: left;
+  line-height: 1;
+  padding-right: 6px;
+}
+
+/* ======= FORM STYLES ======= */
+
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+:required {
+  border-color: #f16969;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  background: #4a89c5;
+  color: #fff;
+  padding: 10px 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-buttons button:hover {
+  background: #366ea8;
+}
+
+/* ======= RESPONSIVE BREAKPOINTS ======= */
+
+/* ----- MEDIUM DEVICES ----- */
+@media (min-width: 591px) {
+  /* Header: align logo and nav nicely */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  /* Service list 2x2 grid */
+  .service-list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Center content nicely */
+  article > section:not([class*="hero"]),
+  .hero,
+  form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ----- LARGE DEVICES ----- */
+@media (min-width: 791px) {
+  body {
+    background: #eef6fb;
+  }
+
+  header,
+  main,
+  footer {
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+}
+
+/* ===== CONTAINER CLASS ===== */
+.container {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+
+/* MEDIUM: 2x2 grid + header flex for nav */
+@media (min-width: 591px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .service-list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  article > section:not([class*="hero"]),
+  .hero,
+  form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* LARGE: keep main centered, header/footer full-width with container inside */
+@media (min-width: 791px) {
+  body {
+    background: #eef6fb;
+  }
+
+  header,
+  footer {
+    /* Keep full width for background color */
+    background: #1c1c1c;
+  }
+
+  main {
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    padding: 0 20px;
+  }
 }
