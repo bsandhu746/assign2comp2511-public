@@ -1,0 +1,72 @@
+.hero-3 {
+  background: linear-gradient(135deg, #4a89c5, #2e6dad);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.hero-3 h1 {
+  font-size: 2.3em;
+}
+.hero-3 p {
+  font-size: 1.1em;
+}
+
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 30px auto;
+}
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+:required {
+  border-color: #f16969;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+legend {
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.form-buttons button {
+  background: #4a89c5;
+  color: #fff;
+  padding: 10px 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.form-buttons button:hover {
+  background: #366ea8;
+}

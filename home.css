@@ -1,0 +1,24 @@
+.hero {
+  background: linear-gradient(135deg, #73bde6, #5aaedc);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
+}
+
+#mission::first-letter {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2b6fa0;
+  float: left;
+  line-height: 1;
+  padding-right: 6px;
+}

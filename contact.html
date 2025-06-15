@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with the Student App Ideas team to share ideas or ask questions.">
+  <title>Contact | Student App Ideas</title>
+  <link rel="stylesheet" href="style/stylesheet.css" >
+  <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+
+  <header>
+    <figure class="logo">
+      <img src="images/logo.png" alt="Student App Ideas Logo">
+      <figcaption>Student App Ideas</figcaption>
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="appideas.html">App Ideas</a></li>
+        <li><a href="contact.html" class="current">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <section class="hero-3">
+        <h2>Let's Connect</h2>
+        <p>Got an idea? A question? Or just want to chat about projects?</p>
+        <a href="#contact-form" class="btn">↓ Jump to Form</a>
+      </section>
+
+      <section>
+        <h2>Why Reach Out?</h2>
+        <p>If you're working on your first app or thinking about one, wdon't hesitate to reach out. Share an idea, ask for feedback, etc.</p>
+      </section>
+
+      <form id="contact-form" action="mailto:bsand746@mtroyal.ca" method="post">
+        <label>Subject (max 100 characters)
+          <input type="text" name="subject" required maxlength="100">
+        </label>
+
+        <label>Your Email
+          <input type="email" name="email" required
+                 placeholder="example@student.ca"
+                 pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+        </label>
+
+        <label>Phone Number (optional)
+          <input type="tel" name="phone"
+                 placeholder="123-456-7890"
+                 pattern="\d{3}-\d{3}-\d{4}">
+        </label>
+
+        <label>Your Message
+          <textarea name="message" required></textarea>
+        </label>
+
+        <fieldset>
+          <legend>Preferred Contact Method</legend>
+          <label><input type="radio" name="method" value="email" required> Email</label>
+          <label><input type="radio" name="method" value="phone"> Phone</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What are you contacting about?</legend>
+          <label><input type="checkbox" name="reason" value="suggestion"> Suggest a New App Idea</label>
+          <label><input type="checkbox" name="reason" value="feedback"> Feedback on the Site</label>
+        </fieldset>
+
+        <div class="form-buttons">
+          <button type="reset">Reset</button>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bir Sandhu</p>
+  </footer>
+</body>
+</html>
