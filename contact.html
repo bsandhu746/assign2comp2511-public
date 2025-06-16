@@ -37,43 +37,40 @@
       </section>
 
       <form id="contact-form" action="mailto:bsand746@mtroyal.ca" method="post">
-        <label>Subject (max 100 characters)
-          <input type="text" name="subject" required maxlength="100">
-        </label>
-
-        <label>Your Email
-          <input type="email" name="email" required
-                 placeholder="example@student.ca"
-                 pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-        </label>
-
-        <label>Phone Number (optional)
-          <input type="tel" name="phone"
-                 placeholder="123-456-7890"
-                 pattern="\d{3}-\d{3}-\d{4}">
-        </label>
-
-        <label>Your Message
-          <textarea name="message" required></textarea>
-        </label>
-
+        <label for="subject">Subject (max 100 characters)</label>
+        <input id="subject" type="text" name="subject" required maxlength="100">
+      
+        <label for="email">Your Email</label>
+        <input id="email" type="email" name="email" required
+               placeholder="example@student.ca"
+               pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+      
+        <label for="phone">Phone Number (optional)</label>
+        <input id="phone" type="tel" name="phone"
+               placeholder="123-456-7890"
+               pattern="\d{3}-\d{3}-\d{4}">
+      
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+      
         <fieldset>
           <legend>Preferred Contact Method</legend>
           <label><input type="radio" name="method" value="email" required> Email</label>
           <label><input type="radio" name="method" value="phone"> Phone</label>
         </fieldset>
-
+      
         <fieldset>
           <legend>What are you contacting about?</legend>
           <label><input type="checkbox" name="reason" value="suggestion"> Suggest a New App Idea</label>
           <label><input type="checkbox" name="reason" value="feedback"> Feedback on the Site</label>
         </fieldset>
-
+      
         <div class="form-buttons">
           <button type="reset">Reset</button>
           <button type="submit">Send</button>
         </div>
       </form>
+      
   </main>
 
   <footer>

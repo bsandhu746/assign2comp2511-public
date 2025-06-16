@@ -113,12 +113,34 @@ td, th {
 .btn {
   background: #73bde6;
   color: #000; 
-}
-.btn:hover {
-  background: #5aaedc;
-  color: #000; 
+  display: inline-block;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
+.btn:hover {
+  background: #5aaedc;
+  color: #000;
+}
+
+.form-buttons button {
+  background: #4a89c5;
+  color: #000;
+  padding: 10px 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-buttons button:hover {
+  background: #366ea8;
+  color: #000;
+}
 
 .float-right {
   float: right;
@@ -142,7 +164,6 @@ td, th {
   display: table;
   clear: both;
 }
-
 
 .hero,
 .hero-2,
@@ -181,7 +202,6 @@ td, th {
   line-height: 1;
   padding-right: 6px;
 }
-
 
 form {
   background: #fff;
@@ -224,88 +244,11 @@ legend {
   padding: 0 6px;
 }
 
-.form-buttons button {
-  background: #4a89c5;
-  color: #fff;
-}
-.form-buttons button:hover {
-  background: #366ea8;
-}
-
-
-.form-buttons button {
-  background: #4a89c5;
-  color: #fff;
-  padding: 10px 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.form-buttons button:hover {
-  background: #366ea8;
-}
-
-
-@media (min-width: 591px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 20px;
-  }
-
-  nav ul li {
-    margin: 0;
-  }
-
-  .service-list ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  article > section:not([class*="hero"]),
-  .hero,
-  form {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 791px) {
-  body {
-    background: #eef6fb;
-  }
-
-  header,
-  main,
-  footer {
-    max-width: 790px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff;
-  }
-
-  main {
-    padding: 0 20px;
-  }
-}
-
 .container {
   max-width: 790px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 @media (min-width: 591px) {
   header .container {
@@ -346,7 +289,7 @@ legend {
 
   header,
   footer {
-    background: #1c1c1c;
+    background: #1c1c1c; 
   }
 
   main {
