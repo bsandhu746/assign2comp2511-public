@@ -58,8 +58,8 @@ legend {
   margin-top: 20px;
 }
 .form-buttons button {
-  background: #4a89c5;
-  color: #fff;
+  background: #4a89c5; 
+  color: #000;
   padding: 10px 16px;
   font-weight: 600;
   border: none;
@@ -67,6 +67,9 @@ legend {
   cursor: pointer;
   transition: background 0.3s;
 }
+
 .form-buttons button:hover {
   background: #366ea8;
+  color: #000;
 }
+
