@@ -11,18 +11,17 @@
 <body>
 
   <header>
-      <figure class="logo">
-        <img src="images/logo.png" alt="Student App Ideas Logo">
-        <figcaption>Student App Ideas</figcaption>
-      </figure>
-      <nav>
-        <ul>
-          <li><a href="home.html" class="current">Home</a></li>
-          <li><a href="appideas.html">App Ideas</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <figure class="logo">
+      <img src="images/logo.png" alt="Student App Ideas Logo">
+      <figcaption>Student App Ideas</figcaption>
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="current">Home</a></li>
+        <li><a href="appideas.html">App Ideas</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -43,7 +42,7 @@
       </p>
 
       <p>
-        This site was created by a student, for students. I know what it's like to have theory heavy classes and wanting to acctually do something with what we learn. That's why I put together a few practical app ideas that don't require much advanced coding, just motivation.
+        This site was created by a student, for students. I know what it's like to have theory heavy classes and wanting to actually do something with what we learn. That's why I put together a few practical app ideas that don't require much advanced coding, just motivation.
       </p>
 
       <p>
@@ -51,7 +50,7 @@
       </p>
 
       <p>
-        By starting with these small prjects, I hope to encourage students at taking that leap to scale and make larger projects the more they learn!
+        By starting with these small projects, I hope to encourage students to take that leap to scale and make larger projects the more they learn!
       </p>
 
       <!-- Link to more project ideas -->
@@ -91,12 +90,30 @@
         </table>
       </section>
 
+      <section id="quick-contact">
+        <h2>Contact Form!</h2>
+        <form action="mailto:bsand746@mtroyal.ca" method="post">
+          <label for="quick-email">Your Email</label>
+          <input id="quick-email" type="email" name="email" required placeholder="example@student.ca" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+
+          <label for="quick-message">Message</label>
+          <textarea id="quick-message" name="message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+
     </article>
   </main>
 
   <footer>
-      <p>&copy; 2025 Bir Sandhu</p>
-    </div>
-  </footer>
+    <p>&copy; 2025 Bir Sandhu</p>
+    <nav class="footer-nav">
+      <a href="home.html" class="btn">Home</a>
+      <a href="appideas.html" class="btn">App Ideas</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </footer>  
+
 </body>
 </html>
